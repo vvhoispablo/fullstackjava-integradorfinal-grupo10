@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link a font-awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- link a css  -->
+    <link rel="stylesheet" href="../css/style2.css">
+
+</head>
+
+<body>
+    <header>
+        <section class="flex">
+    
+            <a href="#" class="logo"><i class="fa-solid fa-plate-wheat"></i>BairesCakes!</a>
+    
+            <nav class="navbar">
+                <a class="active" href="#inicio">inicio</a>
+                <a href="#nosotros">nosotros</a>
+                <a href="#catalogo">catálogo</a>
+                <a href="#staff">staff</a>
+            </nav>
+        
+            <div class="icons">
+                <i class="fas fa-bars" id="menu-bars"></i>
+                <i class="fas fa-search" id="search-icon"></i>
+                <a href="login.html">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+                <a href="#" class="fas fa-shopping-cart"></a>
+            </div>
+        </section>
+    </header>
+
+    <!-- botón buscador  -->
+
+    <form action="" id="search-form">
+        <input type="search" placeholder="¿qué deseas buscar?" name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <div id="login">
+        <section class="fondoSection"> 
+            <div class="contenedorTorta">
+                <img src="../images/20139ec05ccf5a6a9ce274748cc7e828.jpg" alt="logotorta">
+            </div>
+            <div>
+                <h1 class="heading" id="logTitle">Iniciar sesión</h1>
+            </div>
+            <div class="login-box">
+                <form action="servletUsuario" method="POST">
+                    <label for="username">Usuario:</label>
+                    <input type="text" id="username" name="textUsuario" required>
+            
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="textClave" required>
+            
+                    <button type="submit" name="accion" value="ingresar">Ingresar</button>
+                </form>
+                <div class="register-link">
+                    ¿No tienes una cuenta? <a href="./registro/formularioRegistrarse.html">Registrarse</a>
+                </div>
+            </div>
+        </section>
+    </div> 
+
+    <!-- sección - footer  -->
+
+    <div class="container">
+
+        <section class="footer">
+
+            <div class="box-container">
+        
+                <div class="box">
+                    <h3>locaciones:</h3>
+                    <a href="#">almagro</a>
+                    <a href="#">belgrano</a>
+                    <a href="#">caballito</a>
+
+                </div>
+        
+                <div class="box">
+                    <h3>acceso directo</h3>
+                    <a href="#inicio">inicio</a>
+                    <a href="#destacada">destacada</a>
+                    <a href="#nosotros">nosotros</a>
+                    <a href="#catalogo">catálogo</a>
+                    <a href="#staff">staff</a>
+                    <a href="#carrito">pedido</a>
+                </div>
+        
+                <div class="box">
+                    <h3>información de contacto</h3>
+                    <a href="#">+54 11 234 5678</a>
+                    <a href="#">bairescakes@gmail.com</a>
+                    <a href="#">argentina, buenos aires - av. messi 123</a>
+                </div>
+        
+                <div class="box">
+                    <h3>nuestras</h3>
+                    <a href="#">instagram</a>
+                    <a href="#">facebook</a>
+                    <a href="#">linkedin</a>
+                </div>
+        
+            </div>
+        
+            <div class="credit">copyright @ 2023 ><span>codo a codo - fullstack java - comisión 23566 - grupo 10 
+                <br>
+                (Daniela Ailin Gañan, Gonzalo Mendez, Pablo Nicolás Tanno & Pilar Quinteros)</span> </div>
+        
+        </section>
+    </div>
+
+    <!-- link de javascript  -->
+    <script src="../js/script.js"></script>
+
+</body>
+</html>
