@@ -191,12 +191,12 @@ header .flex .icons #menu-bars{
     background-position: center;
     background-repeat: no-repeat; 
     padding: 50px;
-    position: relative; /* Añadido */
+    position: relative; 
 }
 
 .contenedorTorta {
     text-align: center; 
-    margin-bottom: 20px; /* Ajustado */
+    margin-bottom: 20px;
 }
 
 .contenedorTorta img {
@@ -210,30 +210,34 @@ header .flex .icons #menu-bars{
 
 .login-box {
     width: 320px;
-    max-width: 80%; /* Ajustado */
-    height: auto; /* Ajustado */
-    margin: 0 auto; /* Añadido */
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto; 
     box-sizing: border-box;
     padding: 70px;
-    background: rgba(255, 255, 255, 0.8); /* Añadido */
-    border-radius: 10px; /* Añadido */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Añadido */
+    background: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .login-box form {
-    margin-bottom: 20px; /* Ajustado */
+    margin-bottom: 20px; 
 }
 
 .login-box label {
+    color: var(--chocolate);
     display: block;
     margin-bottom: 8px;
 }
+
 
 .login-box input {
     width: 100%;
     padding: 8px;
     margin-bottom: 16px;
     box-sizing: border-box;
+    color: var(--chocolate);
+    border: 1px solid var(--chocolate)
 }
 
 .login-box button {
@@ -250,8 +254,31 @@ header .flex .icons #menu-bars{
     background-color: var(--chocolate);
 }
 
+.login-box .register-link a {
+    color: var(--chocolate);
+    transition: color 0.2s ease-in-out; 
+}
+
+.login-box .register-link a:hover {
+    color: var(--strawberry);
+}
+
 .register-link {
     text-align: center; 
+}
+
+.register-link p{
+    color: var(--chocolate);
+    font-family: 'Nunito', sans-serif; 
+    font-size: 1.7rem;
+}
+
+.login-box label,
+.login-box input,
+.login-box button,
+.login-box .register-link a {
+    font-family: 'Nunito', sans-serif; 
+    font-size: 1.7rem; 
 }
 
 #logTitle {
@@ -260,7 +287,7 @@ header .flex .icons #menu-bars{
 
 .footer {
     position: relative;
-    margin-top: 50px;
+    margin-top: 10px;
 
 }
 

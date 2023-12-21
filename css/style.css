@@ -603,5 +603,8 @@ header .flex .icons #menu-bars{
         width:100%;
     }
 
+    .login-box{
+        padding: 40px;
+    }
 }
 
