@@ -8,22 +8,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- link a css  -->
-    <link rel="stylesheet" href="../../css/style2.css">
+    <link rel="stylesheet" href="../../css/style3.css">
 
 </head>
 <body>
     <header>
         <section class="flex">
     
-            <a href="#" class="logo"><i class="fa-solid fa-plate-wheat"></i>BairesCakes!</a>
+            <a href="../../index.html" class="logo"><i class="fa-solid fa-plate-wheat"></i>BairesCakes!</a>
     
             <nav class="navbar">
-                <a class="active" href="#inicio">inicio</a>
-                <a href="#destacada">destacada</a>
-                <a href="#nosotros">nosotros</a>
-                <a href="#catalogo">catálogo</a>
-                <a href="#staff">staff</a>
-                <a href="#carrito">pedido</a>
+                <a class="active" href="../../index.html #inicio">inicio</a>
+                <a href="../../index.html #nosotros">nosotros</a>
+                <a href="../../index.html #catalogo">catálogo</a>
+                <a href="../../index.html #staff">staff</a>
+                <a href="../formulario.html">pedido</a>
             </nav>
         
             <div class="icons">
@@ -32,7 +31,7 @@
                 <a href="../../resources/login.html">
                     <i class="fa-solid fa-user"></i>
                 </a>
-                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="../formulario.html" class="fas fa-shopping-cart"></a>
             </div>
         </section>
     </header>
@@ -45,24 +44,54 @@
         <i class="fas fa-times" id="close"></i>
     </form>
 
-    <form action="registroServlet" method="POST">
-        <label for="usuario">Usuario:</label>
-        <input type="text" id="usuario" name="textusuario" required><br>
+    <div id="formR">
 
-        <label for="clave">Clave:</label>
-        <input type="password" id="clave" name="textclave" required><br>
-
-        <label for="direccion">Dirección:</label>
-        <input type="text" id="direccion" name="textdireccion" required><br>
-
-        <label for="pisoDepto">Piso/Depto:</label>
-        <input type="text" id="pisoDepto" name="textpisoDepto"><br>
-
-        <label for="telefono">Número de Teléfono:</label>
-        <input type="text" id="telefono" name="texttelefono" pattern="\d+" required><br>
-
-        <button type="submit" name="accion" value="registrarse">Registrarse</button>
-    </form>
+        <section class="carrito" id="registro">
+    
+            <h3 class="sub-heading">¡Regístrate!</h3>
+            <h1 class="heading">Completa tus datos</h1>
+    
+            <form action="registroServlet" method="POST" class="registro-form">
+    
+                <div class="inputBox">
+                    <div class="input">
+                        <label for="usuario">Usuario:</label>
+                        <input type="text" id="usuario" name="textusuario" required>
+                    </div>
+                    <div class="input">
+                        <label for="clave">Clave:</label>
+                        <input type="password" id="clave" name="textclave" required>
+                    </div>
+                    <div class="input">
+                        <label for="telefono">Número de Teléfono:</label>
+                        <input type="text" id="telefono" name="texttelefono" pattern="\d+" required>
+                    </div>
+                </div>
+    
+                <div class="inputBox">
+                    <div class="input">
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" id="direccion" name="textdireccion" required>
+                    </div>
+                    <div class="input">
+                        <label for="pisoDepto">Piso/Depto:</label>
+                        <input type="text" id="pisoDepto" name="textpisoDepto">
+                    </div>
+                </div>
+    
+                <div class="inputBox">
+                    <div class="input">
+                        <label for="telefono">Número de Teléfono:</label>
+                        <input type="text" id="telefono" name="texttelefono" pattern="\d+" required>
+                    </div>
+                </div>
+    
+                <button type="submit" name="accion" value="registrarse" class="btn">Registrarse</button>
+    
+            </form>
+    
+        </section>
+    </div>
 
     <!-- sección - footer  -->
 
